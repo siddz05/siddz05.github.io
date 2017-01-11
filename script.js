@@ -18,9 +18,10 @@ function greetMe(name) {
   alert("Hello " + name + ", today is " + today.toDateString());
 }
 
+
 //greetMe("World");
 
-
+/*
 function myFunction() {
   //alert('Helow!');
   var x = document.getElementById("myTopnav");
@@ -29,7 +30,7 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
-}
+} */
 
 //myFunction();
 
