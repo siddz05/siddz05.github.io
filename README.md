@@ -1,2 +1,5 @@
 # siddz05.github.io
-My Hub
+My Personal Portal - Online Profile & Other Usefull Links From all around the World!
+
+Yours,
+~S!D
