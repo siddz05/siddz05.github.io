@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   padding-top: 50px;
+    
 }
 
 /*nav{
@@ -138,9 +139,20 @@ padding: 10px;
 .content-head:hover {
  
  background-color: aliceblue;
+    color: black;
  border-bottom-style: solid;
   border-color: silver;
   
+}
+
+.content-head{
+    background-color: burlywood;
+    color: azure;
+    border-radius: 50px 10px 50px 10px;
+    
+    
+    
+    
 }
 
 /*#sid_head{
