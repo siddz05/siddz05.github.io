@@ -102,6 +102,7 @@
                 <li><a href="//siddz05.blogspot.com" target="_blank"><span class="glyphicon glyphicon-pencil"></span>  Blog</a></li>
                 <li><a href="#projects"><span class="glyphicon glyphicon-heart-empty"></span>  Projects</a></li>
                 <li><a href="#contact"><span class="glyphicon glyphicon-send"></span>  Contact</a></li>
+                   <li><a href="#implinks"><span class="glyphicon glyphicon-cloud"></span>  Links</a></li>
                 <!--<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -115,12 +116,14 @@
                   </ul>
                 </li>-->
               </ul>
+                <!--
               <form class="navbar-form navbar-left">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
               </form>
+                -->
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -161,7 +164,7 @@
           
         
           
-            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#contactinfo">Contact Details</button>
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#contactinfo"><strong><b class="glyphicon glyphicon-share"></b> Contact Details</strong></button>
               
                <!-- Modal For Contact Information! -->
   <div class="modal fade" id="contactinfo" role="dialog">
@@ -177,13 +180,18 @@
           <p> <strong>
             <span class="glyphicon glyphicon-map-marker"></span> Bangalore, India</strong>
               <br>
+               <strong>
+             <span class="glyphicon glyphicon-phone"></span> +91 - 8653943081
+            </strong><br>
               <strong>
              <span class="glyphicon glyphicon-envelope"></span> siddmit@hotmail.com
             </strong>
+              
+              
             </p>
         </div>
         <div class="modal-footer">
-        Scroll Down to drop me a message! <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        Scroll Down to drop me a message!  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
       
@@ -294,7 +302,16 @@
     </tbody>
   </table>
           
-       <!--   RDMS
+        <a href="https://drive.google.com/open?id=0BzKICj_abdGhWW1qdTBSVVotRWM" target="_blank" style="color:black;" data-toggle="tooltip" data-placement="bottom" title="Click On Me To Download My Resume!"><button type="button" class="btn btn-lg"><strong><b class="glyphicon glyphicon-list-alt"></b> My Resume</strong></button></a>
+      
+         <!--Script For Tooltip-->          
+          <script>
+              $(document).ready(function(){
+                  $('[data-toggle="tooltip"]').tooltip();   
+              });
+          </script>
+
+          <!--   RDMS
           OS
           Source Control
           Scripting -->
@@ -357,7 +374,7 @@
     <br>
      <br>        
                <div class="col-md-6">
-                   <button type="submit" class="btn btn-success btn-lg"><b class="glyphicon glyphicon-send"> Send</b></button>
+                   <button type="submit" class="btn btn-lg"><b class="glyphicon glyphicon-send"><strong> Send</strong></b></button>
                </div>          
   </form>
                 
@@ -387,7 +404,7 @@
       <tr>
         <td>Email Signature Generator</td>
         <td>A Portal, where you will get your own email signature!</td>
-        <td><a href="sign.html" target="_blank"><button type="button" class="btn btn-success btn-md">E-Sign Portal</button></a></td>
+        <td><a href="sign.html" target="_blank"><button type="button" class="btn btn-md" style="color:black;"><strong><b class="glyphicon glyphicon-pencil"></b> E-Sign Portal</strong></button></a></td>
       </tr>
     </tbody>
   </table>
