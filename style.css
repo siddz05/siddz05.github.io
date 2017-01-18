@@ -155,6 +155,12 @@ padding: 10px;
     
 }
 
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
 /*#sid_head{
 margin-top: 5px;
 height: 250px;
