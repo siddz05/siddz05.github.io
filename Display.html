@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Display Form</h1>
+<hr>
+<p>
+  Please Select Color :
+    <input type="color" id="clr"></input>
+
+    <input type="submit" value="Change Color" onclick="displayColor();"><br>
+    <input type="submit" value="Reset Color" onclick="cleaColor();">
+    <br>
+    Please Select A Image :
+    <input type="file" accept="image/*" onchange="loadFile(event)"><br>
+    <input type="submit" value="Reset Image" onclick="cleaImage();">
+
+
+</p>
+<p>
+  <h2>Output</h2>
+  <hr>
+  Color Thingy:
+<div id="demo" width=100px height=100px style="border-color:red; border-width:5px;">My Color Gown Change!</div>
+<br>
+Image Thingy:<br>
+<img id="output" style="height:300px;width:300px"/>
+</p>
+<script>
+//Color
+function displayColor(){
+  //this will take the value of the input from user and store it in x
+  var x = document.getElementById("clr").value;
+
+  //take the value of x and show it in the place of <p> whose id is demo
+  //document.getElementById("demo").innerHTML = x;
+  document.getElementById("demo").style.backgroundColor = x;
+}
+function cleaColor(){
+document.getElementById("demo").style.backgroundColor = null;
+}
+//Display Image
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    var x = document.getElementById("output").style.display = "block";
+
+
+  };
+//Clear Image
+function cleaImage(){
+  var x = document.getElementById("output").style.display = "none";
+
+}
+
+</script>
+</body>
+</html>
