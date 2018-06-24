@@ -15,9 +15,41 @@
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" id="head1" style="max-width:1400px;">
-
+  <!--header-->
+  <header class="w3-container w3-teal w3-center w3-margin-bottom">
+    <!--Menu Bar-->
+      <div class="w3-dropdown-hover w3-right w3-margin">
+          <button class="w3-button w3-teal">&#9776;</button>
+          <div class="w3-dropdown-content w3-bar w3-border w3-animate-zoom" style="right:0">
+            <a href="index.html" class="w3-bar-item w3-button w3-text-teal">Home</a>
+            <a href="index.html" class="w3-bar-item w3-button w3-text-teal">Resume</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-teal">Contact</a>
+          </div>
+        </div>
+        <!--Heading-->
+    <span class="w3-card-4">
+      <h2>Sid's Hub!</h2>
+      <p>Welcome, To My Space.</p>
+    </span>
+  </header>
+ <!--Menu Bar-->
+ <!-- <div class="w3-container w3-margin-bottom">
+ <div class="w3-bar w3-text-teal">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small">Resume</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small">Blog</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menuColapse()">&#9776;</a>
+  </div>
+  
+  <div id="menu" class="w3-bar-block w3-text-teal w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" class="w3-bar-item w3-button">Resume</a>
+    <a href="#" class="w3-bar-item w3-button">Blog</a>
+    <a href="#" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div> -->
   <!-- The Grid -->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" id="home">
   
     <!-- Left Column -->
     <div class="w3-third">
@@ -221,6 +253,15 @@
   </p>
     <a href="#head1"><i class="fa fa-arrow-circle-up fa-1x" aria-hidden="true"></i></a>
 </footer>
-
+<script>
+    function menuColapse() {
+        var x = document.getElementById("menu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
 </body>
 </html>
