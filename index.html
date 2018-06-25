@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
+  <head>
+      <!-- <link rel="import" href="assets/include/header.html"> -->
+      
 <title>Sid's Hub</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/w3.css">
 <link rel="stylesheet" href="assets/css/font-awesome-4.7.7.css">
+<!--fontawesome 5 use-->
+<link rel="stylesheet" href="assets/css/fontawesome-free-5.1.0-web/css/all.css">
+<link rel="stylesheet" href="assets/css/fontawesome-free-5.1.0-web/css/v4-shims.min.css">
+<!--fontawesome 5 use end-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <link rel="stylesheet" href="assets/css/main.css">
 <script src="assets/js/main.js"></script>
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
-<body class="w3-light-grey">
-
+</head>
+<body class="w3-light-grey" ng-app="">
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" id="head1" style="max-width:1400px;">
   <!--header-->
-  <header class="w3-container w3-teal w3-center w3-margin-bottom">
+ 
+  <header class="w3-container w3-teal  w3-margin-bottom">
     <!--Menu Bar-->
-      <div class="w3-dropdown-hover w3-right w3-margin">
-          <button class="w3-button w3-teal">&#9776;</button>
-          <div class="w3-dropdown-content w3-bar w3-border w3-animate-zoom" style="right:0">
-            <a href="index.html" class="w3-bar-item w3-button w3-text-teal">Home</a>
-            <a href="index.html" class="w3-bar-item w3-button w3-text-teal">Resume</a>
-            <a href="#" class="w3-bar-item w3-button w3-text-teal">Contact</a>
-          </div>
-        </div>
         <!--Heading-->
-    <span class="w3-card-4 w3-animate-bottom">
-      <h2>Sid's Hub!</h2>
-      <!-- <p>Welcome, To My Space.</p> -->
+    <div class="w3-center">
+    <span class="w3-animate-bottom">
+      <h2 class="w3-wide">Sid's Hub</h2>
     </span>
+    <span class="w3-opacity w3-teal">
+        <span class="w3-button w3-left"> <i class="fas fa-bars"></i></span>
+      Welcome, To My Space.
+      <span class="w3-right w3-opacity">v0.1</span>
+    </span>
+  </div>
+  
   </header>
  <!--Menu Bar-->
  <!-- <div class="w3-container w3-margin-bottom">
@@ -62,13 +69,13 @@
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>FullStack Software Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Bangalore, INDIA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>siddmit@hotmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+          <p><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>FullStack Software Developer</p>
+          <p><i class="fas fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Bangalore, INDIA</p>
+          <p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>siddmit@hotmail.com</p>
+          <p><i class="fas fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p class="w3-large"><b><i class="fas fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
           <!--Programing Languages-->
           <div class="w3-panel w3-pale-green">
             <p class="w3-margin-right w3-text-teal w3-wide">Programing Languages</p>
@@ -133,7 +140,7 @@
           </div>
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p class="w3-large w3-text-theme"><b><i class="fas fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
           <p>Hindi</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
@@ -157,12 +164,12 @@
     <div class="w3-twothird">
     <!--Working Places-->
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-suitcase fas-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <!--First Job-->
         <div class="w3-container">
           <h5 class="w3-opacity"><b>FullStack Software Developer</b></h5>
           <h6 class="w3-opacity">CrowdANALYTIX</h6>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2017 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+          <h6 class="w3-text-teal"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Feb 2017 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
           <p>Developed and implemented complex Internet and Intranet applications on multiple platforms. Built
             application platform foundation to support migration from client-server product lines to enterprise
             architectures and services. Consistently met deadlines and requirements for all production work
@@ -174,43 +181,42 @@
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Software Developer</b></h5>
           <h6 class="w3-opacity">Mindteck India Ltd</h6>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2015 - Jan 2017</h6>
+          <h6 class="w3-text-teal"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Oct 2015 - Jan 2017</h6>
           <p>Identified and suggested new technologies and tools for enhancing product value and increasing team
             productivity. Strengthened developmental methodologies by introducing a code quality document.</p>
         </div>
       </div>
       <!--Education Details-->
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>MIT, WBUT</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011-2015</h6>
+          <h6 class="w3-text-teal"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>2011-2015</h6>
           <p>Bachelor of Technology</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Kendriya Vidyalaya, CBSE</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2000 - 2011</h6>
+          <h6 class="w3-text-teal"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>2000 - 2011</h6>
           <p>Schooling, Science</p><br>
         </div>
       </div>
       <br>
       <!--Core Competencies-->
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-adjust fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Core Competencies</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-bolt fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Core Competencies</h2>
         <div class="w3-container w3-half">
             <p>
-                <ul class="w3-opacity w3-text-teal">
+                <ul class="w3-opacity w3-text-teal w3-ul w3-card-4">
                   <li>Teamwork</li>
                   <li>Flexibility</li>
                   <li>Personal Credibility</li>
                 </ul>
               </p>
-          <hr>
         </div>
-        <div class="w3-container w3-half">
+        <div class="w3-container w3-half ">
           <p>
-            <ul class="w3-opacity w3-text-teal">
+            <ul class="w3-opacity w3-text-teal w3-ul w3-card-4">
               <li> Programming - Java and Python</li>
               <li> RESTFull API Development</li>
               <li> Shell Scripting</li>
@@ -220,7 +226,7 @@
       </div>
       <br>
       <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-adjust fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Deceleration</h2>
+          <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-fingerprint fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Deceleration</h2>
           <div class="w3-container">
               <p>
                   I hereby declare that the information furnished above is true to the best of my knowledge.
@@ -263,5 +269,7 @@
         }
     }
     </script>
+   
+        
 </body>
 </html>
